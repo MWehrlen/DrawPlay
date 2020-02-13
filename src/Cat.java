@@ -26,8 +26,12 @@ public class Cat {
 		Graphics2D g2 = (Graphics2D) g;
 		int x=catX;
 		int y=catY;
+		//draw left ear
 		g2.setColor(Color.pink);
 		g2.fillPolygon(new int[] {80,120,200},new int [] {100,20,300},3);
+		//draw right ear
+		g2.setColor(Color.pink);  
+		g2.fillPolygon(new int[] {335,300,230},new int [] {100,20,300},3);
 		// Draw the head
 		g2.setColor(Color.pink);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
